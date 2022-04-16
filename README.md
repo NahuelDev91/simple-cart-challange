@@ -1,4 +1,4 @@
-#SOLVED
+# SOLVED
 
 # Ejercicio de entrevista, carrito simple
 
