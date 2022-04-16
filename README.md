@@ -1,3 +1,5 @@
+#SOLVED
+
 # Ejercicio de entrevista, carrito simple
 
 ![01](./assets/screenshot-0.jpg)
