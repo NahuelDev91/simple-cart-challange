@@ -25,7 +25,7 @@ export const AddAndRemoveQuantity = ({product}: IProps) => {
               <Button variant="custom" onClick={() => changeQuantity(cProduct, -1)}>
                 -
               </Button>
-              <Box color="black">{cProduct.quantity}</Box>
+              <Box color="black" mx='4'>{cProduct.quantity}</Box>
               <Button variant="custom" onClick={() => changeQuantity(cProduct, +1)}>
                 +
               </Button>

@@ -1,12 +1,8 @@
 //global styles
 export default {
   global: {
-    html: {
-      bg: "whitesmoke",
-    },
     body: {
-      bg: "white",
-      color: "white",
+      bg: "whitesmoke",
     },
     code: {
       fontFamily: "source-code-pro, Menlo, Monaco, Consolas, 'Courier New',monospace",

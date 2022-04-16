@@ -1,6 +1,6 @@
 /* eslint-disable prettier/prettier */
 import { useContext, useEffect, useState } from "react";
-import { Box, Text, Button, Flex, Grid, Heading } from "@chakra-ui/react";
+import { Box, Text, Button, Flex, Grid, Heading, Container } from "@chakra-ui/react";
 
 import api from "./api";
 import { AddAndRemoveQuantity } from "./components/AddAndRemoveQuantity";
@@ -30,8 +30,8 @@ function App() {
   };
 
   return (
-    <main>
-      <Heading color='black' fontSize='24px' p='4'>Estampitiency</Heading>
+    <Container bgColor='white' maxW='1250px' minH='100vh' boxShadow='0 0 3px rgba(0,0,0,0.1)'>
+      <Heading color='black' fontSize='24px' p='4' borderBottom='1px solid gainsboro'>Estampitiency</Heading>
       <Grid as='section' gap='12' gridTemplateColumns='repeat(auto-fill, minmax(320px, 1fr))' p='16px'>
         {products.map((product) => (
           <Flex key={product.id} as='article' flexDir='column' gap='16px' >
@@ -49,11 +49,11 @@ function App() {
       <Box as='aside' bottom='0' display='flex' justifyContent='center' mx='auto' pb='4' position='sticky' >
         <Button variant='customShadow'>{quantityProductsInCart} productos (total: {totalPrice})</Button>
       </Box>
-      <Box as='footer' border='1px solid gray' color='gray' p='16px' textAlign='center'   >
+      <Box as='footer' borderTop='1px solid gray' color='gray' p='16px' textAlign='center'   >
         Encontrá la consigna de este ejercicio y otros más{" "}
         <a href="https://github.com/goncy/interview-challenges/tree/main/simple-cart">acá</a>
       </Box>
-    </main>
+    </Container>
   );
 }
 
